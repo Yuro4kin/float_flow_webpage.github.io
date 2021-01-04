@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float_flow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--Сетки, поток--> 
+  <!-- 1. Пробуем управлять потоком -->
+   <div><h2>1. Поток — это порядок отображения элементов на странице.</h2><br>
+    По умолчанию <strong class="strong-1">блочные элементы отображаются как прямоугольные области, идущие друг за другом сверху вниз, а строчные элементы располагаются сверху вниз и слева направо и при необходимости переносятся на новую строку.</strong>
+    Потоком можно управлять и изменять привычное поведение элементов в потоке.<br>
+    Например, можно заставить блочные элементы двигаться не сверху вниз, а выстраиваться в несколько колонок.<br> 
+    А научившись управлять потоком, вы сможете строить сетки.<br>
+    Один и тот же HTML-код можно выстроить в разные потоки.<br>
+    </div>
+    
+    <div class="container">
+      Наш поток до:
+      <div class="header block">.header</div>
+      <div class="column1 block">.column1</div>
+      <div class="column2 block">.column2</div>
+      <div class="column3 block">.column3</div>
+      <div class="footer block">.footer</div>
+    </div>
+    <div class="container">
+      Что строим:
+      <img src="final-flow-1.png" alt="Результат">
+    </div>
+
+    <div class="container-1">
+      Наш поток после:
+      <div class="header-1 block-1">.header</div>
+      <div class="column-4 block-1">.column1</div>
+      <div class="column-5 block-1">.column2</div>
+      <div class="column-6 block-1">.column3</div>
+      <div class="footer-1 block-1">.footer</div>
+    </div>
+    <div class="container-1">
+      Что строим:
+      <img src="final-flow-1.png" alt="Результат">
+    </div>
+   
+    <!-- 2. Управление потоком, шаг 2 -->
+    <div><h2>2. C помощью свойства float изменили поведение первого блока.</h2><br>
+      <strong class="strong-1">Изменим поведение второго блока.</strong><br>
+      <span class="strong-2"><b>margin-bottom: 3px;</b>   /* меняем - уменьшаем - margin, чтоб .column2 стал на место*/</span> <br>
+      <span class="strong-2"><b>padding: 3px;  </b>       /* меняем - уменьшаем - padding, чтоб .column2 стал на место*/</span>
+    </div>  
+    
+    <div class="container-1">
+      Наш поток после:
+      <div class="header-1 block-test">.header</div>
+      <div class="column-7 block-test">.column1</div>
+      <div class="column-8 block-test">.column2</div>
+      <div class="column-9 block-test">.column3</div>
+      <div class="footer-1 block-test">.footer</div>
+    </div>
+    <div class="container-1">
+      Что строим:
+      <img src="final-flow-1.png" alt="Результат">
+    </div>
+
+
+
+
+
+  </body>
+</html>
