@@ -1,0 +1,83 @@
+p,
+div,
+h1,
+h2 {
+  margin: 10px;
+  padding: 10px;
+}
+p {
+    background-color: pink;
+}
+div {
+    background-color: rgb(241, 214, 138);
+}
+h1 {
+    background-color: green;
+}
+h2 {
+    background-color: greenyellow;
+}
+.strong-1 {
+  background-color: rgb(177, 228, 95);
+}
+
+.strong-2 {
+  background-color: rgb(204, 29, 181);
+}
+/* 1. Пробуем управлять потоком */
+
+.container {
+  width: 300px;
+  margin: 10px auto;
+}
+
+.block {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px dashed #cccccc;
+  color: #cc0000;
+}
+
+.column1 {
+
+}
+                                                        /* answer */
+.container-1 {
+  width: 300px;
+  margin: 10px auto;
+}
+
+.block-1 {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px dashed #cccccc;
+  color: #cc0000;
+}
+
+.column-4 {
+  float: left;                                           /* колонки с вертикального положения перешли в горизонтальное  */
+  width: 120px;                                           /* задали ширину  */
+  min-height: 50px;                                       /* задали миним. высоту */
+}
+
+/* 2. Управление потоком */
+
+.block-test {
+  margin-bottom: 3px;                                     /* меняем - уменьшаем - margin, чтоб блоки стали на место*/
+  padding: 3px;                                           /* меняем - уменьшаем - padding, чтоб блоки стали на место*/
+  color: #cc0000;
+  background-color: rgba(255, 234, 171, 0.5);
+  border: 2px dashed #cccccc;
+}
+
+.column-7 {
+  float: left;                                           /* колонки с вертикального положения перешли в горизонтальное  */
+  width: 120px;                                           /* задали ширину  */
+  min-height: 50px;                                       /* задали миним. высоту */
+}
+
+.column-8 {
+  float: right;
+  width: 120px;
+  min-height: 50px;
+}
